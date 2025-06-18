@@ -1,434 +1,84 @@
 ---
-title: "PLOS template"
-format:
-  plos-pdf:
-    number-sections: false
-    journal:
-      # This is an identifier for the target journal: 
-      # from https://plos.org/resources/writing-center/ following submission guidelines link, the identifier is the part of the URL after https://journals.plos.org/<id>/s/submission-guidelines
-      id: plosone
-    include-in-header:
-      text: |
-        % Remove comment for double spacing
-        % \usepackage{setspace} 
-        % \doublespacing
-author:
-  - name: Name1 Surname
-    equal-contributor: true
-    affiliations:
-      - ref: aff1
-      - ref: aff2
-  - name: Name2 Surname
-    equal-contributor: true
-    affiliations:
-      - ref: aff2
-  - name: Name3 Surname
-    affiliations:
-      - ref: aff2
-      - ref: aff3
-    notes: |
-      "Current Address: Dept/Program/Center, Institution Name, City, State, Country"
-  - name: Name4 Surname
-    affiliations:
-      - ref: aff2
-  - name: Name5 Surname
-    affiliations:
-      - ref: aff2
-    deceased: true
-  - name: Name6 Surname
-    affiliations:
-      - ref: aff2
-  - name: Name7 Surname
-    affiliations:
-      - ref: aff1
-      - ref: aff2
-      - ref: aff3
-    corresponding: true
-    email: correspondingauthor@institute.edu
-  - name: with the Lorem Ipsum Consortium
-    group: true
-author-notes:
-  equal-contributor: These authors contributed equally to this work.
-  deceased: Deceased
-  group: Membership list can be found in the Acknowledgments sections
-affiliations:
-  - id: aff1
-    name: Affiliation Dept, Institution Name
-    city: City
-    state: State
-    country: Country
-  - id: aff2
-    name: Affiliation Center, Institution Name
-    city: City
-    state: State
-    country: Country
-  - id: aff3
-    name: Affiliation Program, Institution Name
-    city: City
-    state: State
-    country: Country
-abstract: |
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget porta erat. Morbi consectetur est vel gravida pretium. Suspendisse ut dui eu ante cursus gravida non sed sem. Nullam sapien tellus, commodo id velit id, eleifend volutpat quam. Phasellus mauris velit, dapibus finibus elementum vel, pulvinar non tellus. Nunc pellentesque pretium diam, quis maximus dolor faucibus id. Nunc convallis sodales ante, ut ullamcorper est egestas vitae. Nam sit amet enim ultrices, ultrices elit pulvinar, volutpat risus.
-author-summary: |
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget porta erat. Morbi consectetur est vel gravida pretium. Suspendisse ut dui eu ante cursus gravida non sed sem. Nullam sapien tellus, commodo id velit id, eleifend volutpat quam. Phasellus mauris velit, dapibus finibus elementum vel, pulvinar non tellus. Nunc pellentesque pretium diam, quis maximus dolor faucibus id. Nunc convallis sodales ante, ut ullamcorper est egestas vitae. Nam sit amet enim ultrices, ultrices elit pulvinar, volutpat risus.
-bibliography: bibliography.bib 
+title: "The Effect of Conflict Detection and Open-Mindedness in Intention to Share Misinformation"
+author: 
+  - name: Frey Aura Galario
+    affiliation:
+    - University of the Philippines Diliman
+  - name: Benedict Salazar Olgado
+    email: b.olgado@slis.upd.edu.ph
+    orcid: 0000-0002-5758-599X
+    affiliation:
+      - University of the Philippines Diliman
+format: docx
+documentclass: scrartcl
+date: last-modified
+link-bibliography: true
+link-citations: true
+editor: visual
+csl: apa.csl
+bibliography: reference.bib
 ---
-
-# General guidelines for this Quarto template
-
-This template shows how to use PLOS template from <https://plos.org/resources/writing-center/>. Each journal has a submission guideline page; please refer to it. 
-
- - [PLOS Biology](https://journals.plos.org/plosbiology/s/submission-guidelines) 
- - [PLOS Climate](https://journals.plos.org/climate/s/submission-guidelines)
- - [PLOS Digital Health](https://journals.plos.org/digitalhealth/s/submission-guidelines)
- - [PLOS Computational Biology](https://journals.plos.org/ploscompbiol/s/submission-guidelines)
- - [PLOS Genetics](https://journals.plos.org/plosgenetics/s/submission-guidelines)
- - [PLOS Global Public Health](https://journals.plos.org/globalpublichealth/s/submission-guidelines)
- - [PLOS Medicine](https://journals.plos.org/plosmedicine/s/submission-guidelines)
- - [PLOS Neglected Tropical Diseases](https://journals.plos.org/plosntds/s/submission-guidelines)
- - [PLOS ONE](https://journals.plos.org/plosone/s/submission-guidelines)
- - [PLOS Pathogens](https://journals.plos.org/plospathogens/s/submission-guidelines)
- - [PLOS Sustainability and Transformation](https://journals.plos.org/sustainabilitytransformation/s/submission-guidelines)
- - [PLOS Water](https://journals.plos.org/water/s/submission-guidelines)
-
-This template file contains some guidelines and recommandation initially given in `plos_latex_template.tex` that can be found in <https://github.com/quarto-journals/plos/blob/main/style-guide/plos_latex_template.tex>
-
-## Metadata
-
-### About journal id field
-
-This is an identifier for the target journal. It can be derived from https://plos.org/resources/writing-center/ following submission guidelines link, the identifier is the part of the URL after `https://journals.plos.org/<id>/s/submission-guidelines`
-
-| Journal                               | id                          |
-|:--------------------------------------|:----------------------------|
-|PLOS Biology                           |plosbiology                  |
-|PLOS Climate                           |climate                      |
-|PLOS Digital Health                    |digitalhealth                |
-|PLOS Computational Biology             |ploscompbiol                 |
-|PLOS Genetics                          |plosgenetics                 |
-|PLOS Global Public Health              |globalpublichealth           |
-|PLOS Medicine                          |plosmedicine                 |
-|PLOS Neglected Tropical Diseases       |plosntds                     |
-|PLOS ONE                               |plosone                      |
-|PLOS Pathogens                         |plospathogens                |
-|PLOS Sustainability and Transformation |sustainabilitytransformation |
-|PLOS Water                             |water                        |
-
-Example :
-
-```yaml
-format:
-  plos-pdf:
-    journal:
-      id: water
-```
-
-## Once your paper is accepted for publication, 
-
-Do not include track change in LaTeX file and leave only the final text of your manuscript. 
-PLOS recommends the use of latexdiff to track changes during review, as this will help to maintain a clean tex file.
-Visit <https://www.ctan.org/pkg/latexdiff?lang=en> for info or contact us at <latex@plos.org>.
-
-_This should not be a problem using Quarto but still a recommandation from the journal_
-
-There are no restrictions on package use within the LaTeX files except that no packages listed in the template may be deleted.  
-
-Please do not include colors or graphics in the text. Color can be used to apply background shading to table cells only.
-
-The manuscript LaTeX source should be contained within a single file (do not use` \input`, `\externaldocument`, or similar commands).
-
-Please contact <latex@plos.org> with any questions submission guidelines. For anything Quarto related, please open an issue in <https://github.com/quarto-journals/plos>. If this is related to the LaTeX template, this could also be a good idea to contact PLOS directly.
-
-## Figures and Tables
-
-Please include tables/figure captions directly after the paragraph where they are first cited in the text.
-
-### Figures
-
-However, do not include graphics in your manuscript
-
-- Figures should be uploaded separately from your manuscript file. 
-- Figures generated using LaTeX should be extracted and removed from the PDF before submission. 
-- Figures containing multiple panels/subfigures must be combined into one image file before submission.
-
-**This means that, depending on how you create your figure, a manual post processing will be required.**
-
-For figure citations, please use "Fig" instead of "Figure". This has been made the default in this Quarto format:
-
-```yaml
-crossref:
-  fig-title: Fig 
-```
-
-Also, place figure captions after the first paragraph in which they are cited.
-
-See PLOS figure guidelines at <https://journals.plos.org/plosone/s/figures> and in your specific journal guideline.
-
-### Tables
-
-Tables should be cell-based and may not contain:
-
-- spacing/line breaks within cells to alter layout or alignment
-- do not nest tabular environments (no tabular environments within tabular environments)
-- no graphics or colored text (cell background color/shading OK)
-
-See PLOS table guidelines at <http://journals.plos.org/plosone/s/tables> and in your specific journal guideline. 
-
-For tables that exceed the width of the text column, use the adjustwidth environment as illustrated in the example table in text below. If you are in this case, you'll either need to manually post process the `.tex` file and recreate the PDF, or you need to include LaTeX tables directly. 
-
-Also, place tables after the first paragraph in which they are cited.
-
-## Equations, math symbols, subscripts, and superscripts
-
-Below are a few tips to help format your equations and other special characters according to our specifications. For more tips to help reduce the possibility of formatting errors during conversion, please see our LaTeX guidelines at http://journals.plos.org/plosone/s/latex
-
-*  For inline equations, please be sure to include all portions of an equation in the math environment. For example, `x$^2$` is incorrect; this should be formatted as $x^2$ (or $\mathrm{x}^2$ if the romanized font is desired).
-
-* Do not include text that is not math in the math environment. For example, `CO2` should be written as `CO\textsubscript{2}` giving CO\textsubscript{2} instead of `CO$_2$`.
-* Please add line breaks to long display equations when possible in order to fit size of the column. 
-* For inline equations, please do not include punctuation (commas, etc) within the math environment unless this is part of the equation.
-* When adding superscript or subscripts outside of brackets/braces, please group using `{}`.  For example, change `"[U(D,E,\gamma)]^2"` to `"{[U(D,E,\gamma)]}^2"`.  
-* Do not use `\cal` for caligraphic font. Instead, use `\mathcal{}`
-
-## Title and headings
-
-Please use "sentence case" for title and headings (capitalize only the first word in a title (or heading), the first word in a subtitle (or subheading), and any proper nouns).
-
-PLOS does not support heading levels beyond the 3rd, meaning no 4th level headings. Header 4 levels `####` is used for the  _Supporting information_ section
-
-## Abstract and author summary
-
-Abstract must be kept below 300 words. 
-
-Author Summary must be kept between 150 and 200 words and first person must be used. 
-
-For PLOS ONE, author summary won't be included as it is not valid for submission.
-
-## Supplementary information syntax
-
-Use this markdown syntax to create the supplementary information block with a custom block of class `.supp`
-```markdown
-::: {.supp}
-## SI TYPE {#id}
-
-First paragraph is a title sentence that will be bold. (required)
-
-Optionnaly, add descriptive text after the title of the
-item. No third paragraph is allowed
-:::
-```
-
-They need to be referenced in text using `nameref` by using this syntax `[id](.nameref)` where `ìd` will be the id used on the header.
-
-## References
-
-Within Quarto, `natbib` will be used with `plos2015.bst`, which expect numeric style citation. Use brackets for references, e.g `[@ref]`. 
-
-## Quarto features limitation
-
-Some features are not working with this format in PDF:
-
-* Callouts
-* Code highlighting customization (border left, background color)
-
-----
-
-> **Following content of this document is from the LaTeX template content to demo journal style.**
-
-----
 
 # Introduction
 
-Lorem ipsum dolor sit [@bib1] amet, consectetur adipiscing elit.
-Curabitur eget porta erat. Morbi consectetur est vel gravida pretium.
-Suspendisse ut dui eu ante cursus gravida non sed sem. Nullam
-@eq-schemeP sapien tellus, commodo id velit id, eleifend
-volutpat quam. Phasellus mauris velit, dapibus finibus elementum vel,
-pulvinar non tellus. Nunc pellentesque pretium diam, quis maximus dolor
-faucibus id. [@bib2] Nunc convallis sodales ante, ut ullamcorper est
-egestas vitae. Nam sit amet enim ultrices, ultrices elit pulvinar,
-volutpat risus.
+## Conflict Detection and Open-Mindedness
 
-$$
-\begin{aligned}
-\mathrm{P_Y} = \underbrace{H(Y_n) - H(Y_n|\mathbf{V}^{Y}_{n})}_{S_Y} + \underbrace{H(Y_n|\mathbf{V}^{Y}_{n})- H(Y_n|\mathbf{V}^{X,Y}_{n})}_{T_{X\rightarrow Y}}
-\end{aligned}
-$$ {#eq-schemeP}
+In cognitive psychology, **conflict detection** refers to the cognitive processes involved in identifying inconsistencies between one's beliefs, attitudes, and the information presented by external stimuli or contradictory viewpoints. This phenomenon is crucial for reinforcing critical thinking and self-reflection. For instance, @Mellers2014Psychological highlight the impact of psychological interventions on improving forecasting accuracy in political contexts, indicating the significance of recognizing conflicts between existing beliefs and new information. Moreover, the study by @Dolbier2025Open emphasizes the role of open-mindedness in navigating conflicts of thought and belief, asserting that the disposition to remain receptive to alternative perspectives can enhance reasoning abilities and conflict resolution skills.
 
-# Materials and methods 
+Conversely, **open-mindedness** within cognitive psychology is characterized by an individual's readiness to consider and engage with diverse, often opposing viewpoints. It is linked to various epistemic virtues such as critical thinking and the ability to process information without bias [@Alsharif2020Open; @Riggs2010Open]. According to Kwong, open-mindedness is fundamental in facilitating cognitive engagement with disparate ideas, enabling individuals to explore the validity of different perspectives while acknowledging their potential fallibility [@Kwong2015Open; @Kwong2016Open]. @Kaeslin2023Virtue posits that open-mindedness can be applied in contexts devoid of direct conflict, encouraging cognitive flexibility and broader understanding. This cognitive flexibility is essential for emotional intelligence and interpersonal relationships, as highlighted by @Beitel2005Psychological, who note that psychological mindedness enhances awareness of both personal and others' cognitive and affective states.
 
-## Etiam eget sapien nibh
+Moreover, educational studies suggest that cultivating open-mindedness can play a significant part in conflict resolution and peace-building, particularly in regions affected by long-standing disputes. @BarTal2020Between discuss the challenges of fostering open-mindedness in conflict-ridden societies, where nationalistic educational approaches often undermine critical thinking and perspective-taking. This aligns with findings by @Skład2020Radicalization, who emphasize the positive influence of educational curricula designed to promote open-mindedness, which subsequently enhances students' conflict resolution abilities and civic competences.
 
-Nulla mi mi, `Fig~\ref{fig1}`{=latex} venenatis sed ipsum varius, volutpat euismod diam.
-Proin rutrum vel massa non gravida. Quisque tempor sem et dignissim
-rutrum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-at justo vitae nulla elementum commodo eu id massa. In vitae diam ac
-augue semper tincidunt eu ut eros. Fusce fringilla erat porttitor lectus
-cursus, vel sagittis arcu lobortis. Aliquam in enim semper, aliquam
-massa id, cursus neque. Praesent faucibus semper libero.
+With those mental skills defined, the next question becomes clear: how do they play out when you’re deciding whether to click “share” on unverified content?
 
-```{=tex}
-% Place figure captions after the first paragraph in which they are cited.
-\begin{figure}[!h]
-\caption{{\bf Bold the figure title.}
-Figure caption text here, please use this space for the figure panel descriptions instead of using subfigure commands. A: Lorem ipsum dolor sit amet. B: Consectetur adipiscing elit.}
-\label{fig1}
-\end{figure}
-```
+## Sharing Online Misinformation
 
-# Results
+The phenomenon of **online misinformation sharing** has significant real-world implications that pose multiple risks across various domains, including public health, social cohesion, and political stability. As social media platforms continue to dominate communication, the rapid dissemination of misinformation not only distorts public perceptions but can also directly impact individual behaviors and societal outcomes.
 
-Results and Discussion can be combined.
+One critical area of concern is the influence of misinformation on **public health**, particularly during health crises like the COVID-19 pandemic. For instance, misinformation surrounding vaccine safety has been linked to increased vaccine hesitancy and refusal. The sharing of false claims—such as vaccines containing microchips—exacerbates public mistrust towards health authorities and slows down immunization efforts, which undermines herd immunity and prolongs the pandemic [@Pierri2021Online; @Ceylan2023Sharing]. Research by @McLoughlin2024Misinformation indicates that misinformation often exploits emotional responses like outrage, further amplifying its spread through social media algorithms that prioritize engagement over truthfulness. This form of misinformation can therefore lead to dire public health outcomes as communities become polarized and less willing to adhere to scientifically supported health guidelines.
 
-Nulla mi mi, venenatis sed ipsum varius, `Table~\ref{table1}`{=latex} volutpat euismod diam. 
-Proin rutrum vel massa non gravida. Quisque
-tempor sem et dignissim rutrum. Lorem ipsum dolor sit amet, consectetur
-adipiscing elit. Morbi at justo vitae nulla elementum commodo eu id
-massa. In vitae diam ac augue semper tincidunt eu ut eros. Fusce
-fringilla erat porttitor lectus cursus, [s1-video]{.nameref} vel sagittis arcu lobortis.
-Aliquam in enim semper, aliquam massa id, cursus neque. Praesent
-faucibus semper libero.
+Additionally, the sharing of misinformation can lead to **mental health challenges**. According to @Verma2022Examining, individuals who engage in sharing misinformation often experience increased anxiety levels, further aggravating mental health issues during times of crisis. This cycle of anxiety and misinformation sharing fosters an environment fraught with confusion and distress, where individuals are unable to distinguish between credible information and harmful falsehoods.
 
-```{=tex}
-% Place tables after the first paragraph in which they are cited.
-\begin{table}[!ht]
-\begin{adjustwidth}{-2.25in}{0in} % Comment out/remove adjustwidth environment if table fits in text column.
-\centering
-\caption{
-{\bf Table caption Nulla mi mi, venenatis sed ipsum varius, volutpat euismod diam.}}
-\begin{tabular}{|l+l|l|l|l|l|l|l|}
-\hline
-\multicolumn{4}{|l|}{\bf Heading1} & \multicolumn{4}{|l|}{\bf Heading2}\\ \thickhline
-$cell1 row1$ & cell2 row 1 & cell3 row 1 & cell4 row 1 & cell5 row 1 & cell6 row 1 & cell7 row 1 & cell8 row 1\\ \hline
-$cell1 row2$ & cell2 row 2 & cell3 row 2 & cell4 row 2 & cell5 row 2 & cell6 row 2 & cell7 row 2 & cell8 row 2\\ \hline
-$cell1 row3$ & cell2 row 3 & cell3 row 3 & cell4 row 3 & cell5 row 3 & cell6 row 3 & cell7 row 3 & cell8 row 3\\ \hline
-\end{tabular}
-\begin{flushleft} Table notes Phasellus venenatis, tortor nec vestibulum mattis, massa tortor interdum felis, nec pellentesque metus tortor nec nisl. Ut ornare mauris tellus, vel dapibus arcu suscipit sed.
-\end{flushleft}
-\label{table1}
-\end{adjustwidth}
-\end{table}
-````
+Social cohesion is also tested by the rampant sharing of misinformation. As noted by @Amin2021Attention, the dynamics of misinformation sharing can lead to tribalism and heightened distrust among different societal groups. For example, misinformation that casts doubt on certain demographics or political ideologies can deepen societal divides. The dissemination of conspiracy theories, as highlighted by @Shaw2020Governance, further confirms this trend by uniting individuals around misinformation rather than facts, thereby undermining collective action towards common societal challenges.
 
-## **LOREM** and **IPSUM** nunc blandit a tortor
+Overall, the motivations for sharing misinformation are manifold, ranging from informational zeal to emotional manipulation. @MacFarlane2020Refuting argue that individuals often share misinformation not out of malice, but because of cognitive biases and social influences that prioritize rapid sharing over rigorous verification. This tendency is exacerbated by the design of social media platforms, which incentivizes the rapid spread of sensationalized content, as discussed by @Apuke2021Fake and @Pennycook2021Shifting
 
-### 3rd level heading
+## Research Gap
 
-Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget
-sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod
-ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque.
-Quisque augue sem, tincidunt sit amet feugiat eget, ullamcorper sed
-velit. Sed non aliquet felis. Lorem ipsum dolor sit amet, consectetur
-adipiscing elit. Mauris commodo justo ac dui pretium imperdiet. Sed
-suscipit iaculis mi at feugiat.
+Despite extensive work linking conflict detection and open-mindedness separately to reductions in misinformation belief and sharing, research has yet to consider how formal training in information evaluation alters their joint impact. In particular, information science students undergo structured instruction in critical appraisal and ethical information management—experiences that likely strengthen conflict detection and foster open-minded attitudes beyond those found in non-LIS peers. Examining these traits concurrently across LIS and non-LIS groups will clarify whether formal training amplifies their combined predictive power for sharing intentions.
 
-1.  react
+# Research Questions and Hypotheses
 
-2.  diffuse free particles
+Drawing on dual-process and meta-cognitive frameworks, we compare information science students (LIS) with non-LIS peers to understand how training in information evaluation shapes the role of conflict detection and open-mindedness in sharing intentions.
 
-3.  increment time by dt and go to 1
+## Research Problem
 
-## Sed ac quam id nisi malesuada congue
+Information science students receive formal instruction in source evaluation, critical appraisal, and ethical information management—skills that likely enhance conflict detection and foster open-minded attitudes. By contrasting LIS and non-LIS groups, we can determine whether academic training amplifies the individual and joint effects of these traits on misinformation sharing behavior.
 
-Nulla mi mi, venenatis sed ipsum varius, volutpat euismod diam. Proin
-rutrum vel massa non gravida. Quisque tempor sem et dignissim rutrum.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at justo
-vitae nulla elementum commodo eu id massa. In vitae diam ac augue semper
-tincidunt eu ut eros. Fusce fringilla erat porttitor lectus cursus, vel
-sagittis arcu lobortis. Aliquam in enim semper, aliquam massa id, cursus
-neque. Praesent faucibus semper libero.
+## Research Questions
 
--   First bulleted item.
+1.  **Does conflict detection predict lower intentions to share misinformation in both LIS and non-LIS students?**\
+    This question tests whether the skill of spotting inconsistencies functions similarly across groups with and without specialized training.
 
--   Second bulleted item.
+2.  **Does the strength of the conflict detection–sharing intention relationship differ between LIS and non-LIS students?**\
+    Here we examine whether LIS training moderates the primary effect, potentially leading to steeper declines in sharing intentions among LIS students.
 
--   Third bulleted item.
+3.  **Does open-mindedness moderate the effect of conflict detection on sharing intentions differently across LIS and non-LIS students?**\
+    We assess whether the joint protective effect of these traits varies by academic background.
 
-# Discussion
+4.  **Do students high in both conflict detection and open-mindedness exhibit the lowest sharing intentions, and is this joint effect more pronounced among LIS students?**\
+    This explores potential synergy and threshold effects within each group.
 
-Nulla mi mi, venenatis sed ipsum varius,see `Table~\ref{table1}`{=latex}
-volutpat euismod diam. Proin rutrum vel massa non gravida. Quisque
-tempor sem et dignissim rutrum. Lorem ipsum dolor sit amet, consectetur
-adipiscing elit. Morbi at justo vitae nulla elementum commodo eu id
-massa. In vitae diam ac augue semper tincidunt eu ut eros. Fusce
-fringilla erat porttitor lectus cursus, vel sagittis arcu lobortis.
-Aliquam in enim semper, aliquam massa id, cursus neque. Praesent
-faucibus semper libero [@bib3].
+## Hypotheses
 
-# Conclusion
+-   **H1:** Across both groups, higher conflict detection will associate with lower intentions to share misinformation.
 
-CO~2~ Maecenas convallis mauris sit amet sem ultrices gravida. Etiam
-eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod
-ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque.
-Quisque augue sem, tincidunt sit amet feugiat eget, ullamcorper sed
-velit.
+-   **H2:** The negative relationship between conflict detection and sharing intentions will be stronger for LIS students than for non-LIS students.
 
-Sed non aliquet felis. Lorem ipsum dolor sit amet, consectetur
-adipiscing elit. Mauris commodo justo ac dui pretium imperdiet. Sed
-suscipit iaculis mi at feugiat. Ut neque ipsum, luctus id lacus ut,
-laoreet scelerisque urna. Phasellus venenatis, tortor nec vestibulum
-mattis, massa tortor interdum felis, nec pellentesque metus tortor nec
-nisl. Ut ornare mauris tellus, vel dapibus arcu suscipit sed. Nam
-condimentum sem eget mollis euismod. Nullam dui urna, gravida venenatis
-dui et, tincidunt sodales ex. Nunc est dui, sodales sed mauris nec,
-auctor sagittis leo. Aliquam tincidunt, ex in facilisis elementum,
-libero lectus luctus est, non vulputate nisl augue at dolor. For more
-information, see [s1-appendix]{.nameref}.
+-   **H3:** Open-mindedness will enhance the negative conflict detection–sharing intention link in both groups.
 
-# Supporting information 
+-   **H4:** The amplifying effect of open-mindedness on conflict detection’s deterrent effect will be greater among LIS students.
 
-::: {.supp}
-## S1 Fig. {#s1-fig}
+-   **H5:** LIS students scoring high on both traits will report the lowest sharing intentions overall, demonstrating a synergistic effect informed by their training.
 
-Bold the title sentence.
-
-Add descriptive text after the title of the item (optional).
-:::
-
-::: {.supp}
-## S2 Fig. {#s2-fig}
-
-Lorem ipsum.
-
-Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque.
-:::
-
-
-::: {.supp}
-## S1 File. {#s1-file}
-
-Lorem ipsum.
-
-:::
-
-::: {.supp}
-
-## S1 Video. {#s1-video}
-
-Lorem ipsum.
-
-Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque.
-:::
-
-::: {.supp}
-## S1 Appendix. {#s1-appendix}
-
-Lorem ipsum.
-
-Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque.
-:::
-
-::: {.supp}
-## S1 Table. {#s1-table}
-
-Lorem ipsum.
-
-Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque.
-:::
-
-# Acknowledgments
-
-Cras egestas velit mauris, eu mollis turpis pellentesque sit amet.
-Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam id
-pretium nisi. Sed ac quam id nisi malesuada congue. Sed interdum aliquet
-augue, at pellentesque quam rhoncus vitae.
+# Reference
