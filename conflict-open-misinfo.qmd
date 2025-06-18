@@ -9,7 +9,7 @@ author:
     orcid: 0000-0002-5758-599X
     affiliation:
       - University of the Philippines Diliman
-format: docx
+format: html
 documentclass: scrartcl
 date: last-modified
 link-bibliography: true
