@@ -9,43 +9,35 @@ author:
     orcid: 0000-0002-5758-599X
     affiliation:
       - University of the Philippines Diliman
-format: html
+format: pdf
 documentclass: scrartcl
 date: last-modified
 link-bibliography: true
 link-citations: true
 editor: visual
-csl: apa.csl
+csl: springer-lecture-notes-in-computer-science.csl
 bibliography: reference.bib
 ---
 
 # Introduction
 
-## Conflict Detection and Open-Mindedness
+Training in information evaluation has a significant influence on the interplay between **conflict detection**, **open-mindedness**, and an individual's **intention to share misinformation**. Cognitive processes involved in evaluating information influence how people recognize and respond to conflicting information, which in turn affects their likelihood of disseminating misinformation.
 
-In cognitive psychology, **conflict detection** refers to the cognitive processes involved in identifying inconsistencies between one's beliefs, attitudes, and the information presented by external stimuli or contradictory viewpoints. This phenomenon is crucial for reinforcing critical thinking and self-reflection. For instance, @Mellers2014Psychological highlight the impact of psychological interventions on improving forecasting accuracy in political contexts, indicating the significance of recognizing conflicts between existing beliefs and new information. Moreover, the study by @Dolbier2025Open emphasizes the role of open-mindedness in navigating conflicts of thought and belief, asserting that the disposition to remain receptive to alternative perspectives can enhance reasoning abilities and conflict resolution skills.
+## Conflict Detection and its Effects on Misinformation Sharing
 
-Conversely, **open-mindedness** within cognitive psychology is characterized by an individual's readiness to consider and engage with diverse, often opposing viewpoints. It is linked to various epistemic virtues such as critical thinking and the ability to process information without bias [@Alsharif2020Open; @Riggs2010Open]. According to Kwong, open-mindedness is fundamental in facilitating cognitive engagement with disparate ideas, enabling individuals to explore the validity of different perspectives while acknowledging their potential fallibility [@Kwong2015Open; @Kwong2016Open]. @Kaeslin2023Virtue posits that open-mindedness can be applied in contexts devoid of direct conflict, encouraging cognitive flexibility and broader understanding. This cognitive flexibility is essential for emotional intelligence and interpersonal relationships, as highlighted by @Beitel2005Psychological, who note that psychological mindedness enhances awareness of both personal and others' cognitive and affective states.
+Conflict detection is essential for individuals who encounter information that contradicts their established beliefs or knowledge. This process stimulates critical thinking and prompts individuals to reflect on the validity of the conflicting information [@Batailler2022Researchers]. Research shows that cognitive training aimed at enhancing critical thinking can improve individuals' abilities to detect conflicts in information, positioning them more favorably against misinformation. For example, findings by Verbruggen et al.[-@Verbruggen2014Performance] highlight the importance of attention in decision-making processes, which could indirectly relate to the recognition of information conflict. Thus, when individuals are trained to evaluate information rigorously, their conflict detection abilities may increase, making them less likely to share misinformation.
 
-Moreover, educational studies suggest that cultivating open-mindedness can play a significant part in conflict resolution and peace-building, particularly in regions affected by long-standing disputes. @BarTal2020Between discuss the challenges of fostering open-mindedness in conflict-ridden societies, where nationalistic educational approaches often undermine critical thinking and perspective-taking. This aligns with findings by @Skład2020Radicalization, who emphasize the positive influence of educational curricula designed to promote open-mindedness, which subsequently enhances students' conflict resolution abilities and civic competences.
+## Open-mindedness and Conflict Resolution 
 
-With those mental skills defined, the next question becomes clear: how do they play out when you’re deciding whether to click “share” on unverified content?
+Open-mindedness complements conflict detection by creating a cognitive environment conducive to embracing diverse perspectives rather than rejecting misinformation outright. Psychological safety transforms tense interactions into constructive dialogues where conflicting views can be addressed [@Xie2022Previous]. This climate fosters open-mindedness, encouraging individuals to consider multiple viewpoints before forming conclusions. The interplay between a psychologically safe environment and open-mindedness has been linked to improved cognitive flexibility and decision-making, thereby minimizing the likelihood of misinformation sharing [@Prike2024Misinformation].
 
-## Sharing Online Misinformation
+An environment that promotes open-mindedness facilitates conflict resolution and enhances the quality of discussions regarding controversial topics, ultimately leading to better information sharing practices. As noted by Bavel and Pereira[-@VanBavel2018Democracies], partisanship can bias information processing, and fostering open-mindedness may help address this tendency towards bias. This suggests that promoting a culture of open dialogue can increase the accuracy of information dissemination within social groups, thus reducing the propagation of false claims.
 
-The phenomenon of **online misinformation sharing** has significant real-world implications that pose multiple risks across various domains, including public health, social cohesion, and political stability. As social media platforms continue to dominate communication, the rapid dissemination of misinformation not only distorts public perceptions but can also directly impact individual behaviors and societal outcomes.
+## Empirical Links Between Critical Thinking and Misinformation Belief
 
-One critical area of concern is the influence of misinformation on **public health**, particularly during health crises like the COVID-19 pandemic. For instance, misinformation surrounding vaccine safety has been linked to increased vaccine hesitancy and refusal. The sharing of false claims—such as vaccines containing microchips—exacerbates public mistrust towards health authorities and slows down immunization efforts, which undermines herd immunity and prolongs the pandemic [@Pierri2021Online; @Ceylan2023Sharing]. Research by @McLoughlin2024Misinformation indicates that misinformation often exploits emotional responses like outrage, further amplifying its spread through social media algorithms that prioritize engagement over truthfulness. This form of misinformation can therefore lead to dire public health outcomes as communities become polarized and less willing to adhere to scientifically supported health guidelines.
+Empirical evidence supports the notion that training in cognitive reflection correlates with a reduction in belief in implausible claims and misinformation [@Martire2023Why]. Individuals scoring higher on the Cognitive Reflection Test (CRT) are often described as reflective thinkers who engage in deeper analytical processes, which typically leads to more skepticism toward misleading information [@Patel2019Cognitive]. The psychological mechanisms underlying this effect are aligned with dual-process theories of reasoning, where intuitive (System 1) and deliberative (System 2) thinking are contrasted.
 
-Additionally, the sharing of misinformation can lead to **mental health challenges**. According to @Verma2022Examining, individuals who engage in sharing misinformation often experience increased anxiety levels, further aggravating mental health issues during times of crisis. This cycle of anxiety and misinformation sharing fosters an environment fraught with confusion and distress, where individuals are unable to distinguish between credible information and harmful falsehoods.
-
-Social cohesion is also tested by the rampant sharing of misinformation. As noted by @Amin2021Attention, the dynamics of misinformation sharing can lead to tribalism and heightened distrust among different societal groups. For example, misinformation that casts doubt on certain demographics or political ideologies can deepen societal divides. The dissemination of conspiracy theories, as highlighted by @Shaw2020Governance, further confirms this trend by uniting individuals around misinformation rather than facts, thereby undermining collective action towards common societal challenges.
-
-Overall, the motivations for sharing misinformation are manifold, ranging from informational zeal to emotional manipulation. @MacFarlane2020Refuting argue that individuals often share misinformation not out of malice, but because of cognitive biases and social influences that prioritize rapid sharing over rigorous verification. This tendency is exacerbated by the design of social media platforms, which incentivizes the rapid spread of sensationalized content, as discussed by @Apuke2021Fake and @Pennycook2021Shifting
-
-## Research Gap
-
-Despite extensive work linking conflict detection and open-mindedness separately to reductions in misinformation belief and sharing, research has yet to consider how formal training in information evaluation alters their joint impact. In particular, information science students undergo structured instruction in critical appraisal and ethical information management—experiences that likely strengthen conflict detection and foster open-minded attitudes beyond those found in non-LIS peers. Examining these traits concurrently across LIS and non-LIS groups will clarify whether formal training amplifies their combined predictive power for sharing intentions.
+Training that enhances individuals' ability to engage in System 2 not only aids in detecting conflicts in the information they encounter but also fosters clearer discernment between true and false claims. Although direct studies connecting diverse cognitive contexts and critical thinking were not located, research indicates a positive relationship between enhanced critical thinking readiness and decreased misinformation sharing [@Martins2013Examined].
 
 # Research Questions and Hypotheses
 
@@ -80,5 +72,17 @@ Information science students receive formal instruction in source evaluation, cr
 -   **H4:** The amplifying effect of open-mindedness on conflict detection’s deterrent effect will be greater among LIS students.
 
 -   **H5:** LIS students scoring high on both traits will report the lowest sharing intentions overall, demonstrating a synergistic effect informed by their training.
+
+# Literature Review
+
+## Cognitive Conflict Detection and Its Importance in Critical Thinking
+
+Cognitive conflict detection refers to the process by which individuals recognize discrepancies between their existing beliefs or knowledge and new information or experiences that challenge those beliefs. This mechanism serves as a catalyst for critical thinking, as it prompts individuals to engage in deeper analysis and reconsideration of their views when confronted with conflicting data or perspectives. As articulated by Makhrus and Hidayatullah[-@Makhrus2021Role], the experience of cognitive conflict can enhance conceptual understanding by motivating learners to resolve inconsistencies in their knowledge frameworks. Similarly, Zetriuslita et al.[@Zetriuslita2018Association] emphasize that problem-based learning combined with cognitive conflict strategies can cultivate critical thinking abilities, although not all aspects such as mathematical communication skills may improve.
+
+The importance of cognitive conflict in education and reasoning is highlighted by findings linking performance in critical reasoning tasks to a reduced belief in false claims. Engaging in tasks that elicit cognitive conflict has been associated with improved critical thinking skills, which can diminish susceptibility to misinformation. Verawati and Hikmawati[@Verawati2021Analysis] found that employing cognitive conflict strategies within inquiry teaching effectively improved students’ critical thinking abilities, enhancing their capacity to analyze and assess the validity of the claims they encounter. This premise aligns with the understanding that when individuals confront conflicting information, they are more likely to engage in System 2 reasoning—characterized by deliberate, reflective thought—thus improving their ability to scrutinize information critically.
+
+The interaction between cognitive conflict and critical thinking aligns well with dual-process models of reasoning, which propose two distinct but interconnected pathways of cognitive processing: System 1 and System 2. System 1 is characterized as fast, automatic, and reliant on heuristics, whereas System 2 encompasses slower, more analytical, and effortful thought processes [@Anggoro2019Using; Stephens2018Reasoning]. Conflict detection activates engagement of System 2, prompting individuals to critically examine the conflicting information they encounter. This activation allows them to weigh evidence and counter-argue against misinformation.
+
+For instance, Guo et al.[-@Guo2017Thinking] found that prompting individuals to deliberate about framing effects in decision-making scenarios enhances the engagement of System 2, which can mitigate biases typical of quicker, heuristic-driven judgments associated with System 1 processing. Furthermore, the findings from Diederich and Trueblood[-@Diederich2018Theoretical] illustrate that the dynamic interaction between intuitive and deliberative processes is crucial for nuanced decision-making under uncertainty, reinforcing the necessity of engaging System 2 during conflicts to achieve reasoned conclusions.
 
 # Reference
