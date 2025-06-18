@@ -1,9 +1,5 @@
 ---
 title: "The Effect of Conflict Detection and Open-Mindedness in Intention to Share Misinformation"
-format: html
-editor: visual
-csl: apa.csl
-bibliography: reference.bib
 author: 
   - name: Frey Aura Galario
     affiliation:
@@ -13,13 +9,77 @@ author:
     orcid: 0000-0002-5758-599X
     affiliation:
       - University of the Philippines Diliman
-  
+format: docx
+documentclass: scrartcl
+date: last-modified
+link-bibliography: true
+link-citations: true
+editor: visual
+csl: apa.csl
+bibliography: reference.bib
+
 ---
 
 # Introduction
+
+## Conflict Detection and Open-Mindedness
 
 In cognitive psychology, **conflict detection** refers to the cognitive processes involved in identifying inconsistencies between one's beliefs, attitudes, and the information presented by external stimuli or contradictory viewpoints. This phenomenon is crucial for reinforcing critical thinking and self-reflection. For instance, @Mellers2014Psychological highlight the impact of psychological interventions on improving forecasting accuracy in political contexts, indicating the significance of recognizing conflicts between existing beliefs and new information. Moreover, the study by @Dolbier2025Open emphasizes the role of open-mindedness in navigating conflicts of thought and belief, asserting that the disposition to remain receptive to alternative perspectives can enhance reasoning abilities and conflict resolution skills.
 
 Conversely, **open-mindedness** within cognitive psychology is characterized by an individual's readiness to consider and engage with diverse, often opposing viewpoints. It is linked to various epistemic virtues such as critical thinking and the ability to process information without bias [@Alsharif2020Open; @Riggs2010Open]. According to Kwong, open-mindedness is fundamental in facilitating cognitive engagement with disparate ideas, enabling individuals to explore the validity of different perspectives while acknowledging their potential fallibility [@Kwong2015Open; @Kwong2016Open]. @Kaeslin2023Virtue posits that open-mindedness can be applied in contexts devoid of direct conflict, encouraging cognitive flexibility and broader understanding. This cognitive flexibility is essential for emotional intelligence and interpersonal relationships, as highlighted by @Beitel2005Psychological, who note that psychological mindedness enhances awareness of both personal and others' cognitive and affective states.
 
 Moreover, educational studies suggest that cultivating open-mindedness can play a significant part in conflict resolution and peace-building, particularly in regions affected by long-standing disputes. @BarTal2020Between discuss the challenges of fostering open-mindedness in conflict-ridden societies, where nationalistic educational approaches often undermine critical thinking and perspective-taking. This aligns with findings by @Skład2020Radicalization, who emphasize the positive influence of educational curricula designed to promote open-mindedness, which subsequently enhances students' conflict resolution abilities and civic competences.
+
+With those mental skills defined, the next question becomes clear: how do they play out when you’re deciding whether to click “share” on unverified content?
+
+## Sharing Online Misinformation
+
+The phenomenon of **online misinformation sharing** has significant real-world implications that pose multiple risks across various domains, including public health, social cohesion, and political stability. As social media platforms continue to dominate communication, the rapid dissemination of misinformation not only distorts public perceptions but can also directly impact individual behaviors and societal outcomes.
+
+One critical area of concern is the influence of misinformation on **public health**, particularly during health crises like the COVID-19 pandemic. For instance, misinformation surrounding vaccine safety has been linked to increased vaccine hesitancy and refusal. The sharing of false claims—such as vaccines containing microchips—exacerbates public mistrust towards health authorities and slows down immunization efforts, which undermines herd immunity and prolongs the pandemic [@Pierri2021Online; @Ceylan2023Sharing]. Research by @McLoughlin2024Misinformation indicates that misinformation often exploits emotional responses like outrage, further amplifying its spread through social media algorithms that prioritize engagement over truthfulness. This form of misinformation can therefore lead to dire public health outcomes as communities become polarized and less willing to adhere to scientifically supported health guidelines.
+
+Additionally, the sharing of misinformation can lead to **mental health challenges**. According to @Verma2022Examining, individuals who engage in sharing misinformation often experience increased anxiety levels, further aggravating mental health issues during times of crisis. This cycle of anxiety and misinformation sharing fosters an environment fraught with confusion and distress, where individuals are unable to distinguish between credible information and harmful falsehoods.
+
+Social cohesion is also tested by the rampant sharing of misinformation. As noted by @Amin2021Attention, the dynamics of misinformation sharing can lead to tribalism and heightened distrust among different societal groups. For example, misinformation that casts doubt on certain demographics or political ideologies can deepen societal divides. The dissemination of conspiracy theories, as highlighted by @Shaw2020Governance, further confirms this trend by uniting individuals around misinformation rather than facts, thereby undermining collective action towards common societal challenges.
+
+Overall, the motivations for sharing misinformation are manifold, ranging from informational zeal to emotional manipulation. @MacFarlane2020Refuting argue that individuals often share misinformation not out of malice, but because of cognitive biases and social influences that prioritize rapid sharing over rigorous verification. This tendency is exacerbated by the design of social media platforms, which incentivizes the rapid spread of sensationalized content, as discussed by @Apuke2021Fake and @Pennycook2021Shifting
+
+## Research Gap
+
+Despite extensive work linking conflict detection and open-mindedness separately to reductions in misinformation belief and sharing, research has yet to consider how formal training in information evaluation alters their joint impact. In particular, information science students undergo structured instruction in critical appraisal and ethical information management—experiences that likely strengthen conflict detection and foster open-minded attitudes beyond those found in non-LIS peers. Examining these traits concurrently across LIS and non-LIS groups will clarify whether formal training amplifies their combined predictive power for sharing intentions.
+
+# Research Questions and Hypotheses
+
+Drawing on dual-process and meta-cognitive frameworks, we compare information science students (LIS) with non-LIS peers to understand how training in information evaluation shapes the role of conflict detection and open-mindedness in sharing intentions.
+
+## Research Problem
+
+Information science students receive formal instruction in source evaluation, critical appraisal, and ethical information management—skills that likely enhance conflict detection and foster open-minded attitudes. By contrasting LIS and non-LIS groups, we can determine whether academic training amplifies the individual and joint effects of these traits on misinformation sharing behavior.
+
+## Research Questions
+
+1.  **Does conflict detection predict lower intentions to share misinformation in both LIS and non-LIS students?**\
+    This question tests whether the skill of spotting inconsistencies functions similarly across groups with and without specialized training.
+
+2.  **Does the strength of the conflict detection–sharing intention relationship differ between LIS and non-LIS students?**\
+    Here we examine whether LIS training moderates the primary effect, potentially leading to steeper declines in sharing intentions among LIS students.
+
+3.  **Does open-mindedness moderate the effect of conflict detection on sharing intentions differently across LIS and non-LIS students?**\
+    We assess whether the joint protective effect of these traits varies by academic background.
+
+4.  **Do students high in both conflict detection and open-mindedness exhibit the lowest sharing intentions, and is this joint effect more pronounced among LIS students?**\
+    This explores potential synergy and threshold effects within each group.
+
+## Hypotheses
+
+-   **H1:** Across both groups, higher conflict detection will associate with lower intentions to share misinformation.
+
+-   **H2:** The negative relationship between conflict detection and sharing intentions will be stronger for LIS students than for non-LIS students.
+
+-   **H3:** Open-mindedness will enhance the negative conflict detection–sharing intention link in both groups.
+
+-   **H4:** The amplifying effect of open-mindedness on conflict detection’s deterrent effect will be greater among LIS students.
+
+-   **H5:** LIS students scoring high on both traits will report the lowest sharing intentions overall, demonstrating a synergistic effect informed by their training.
+
+# Reference
