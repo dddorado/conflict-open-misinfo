@@ -1,0 +1,25 @@
+---
+title: "The Effect of Conflict Detection and Open-Mindedness in Intention to Share Misinformation"
+format: html
+editor: visual
+csl: apa.csl
+bibliography: reference.bib
+author: 
+  - name: Frey Aura Galario
+    affiliation:
+    - University of the Philippines Diliman
+  - name: Benedict Salazar Olgado
+    email: b.olgado@slis.upd.edu.ph
+    orcid: 0000-0002-5758-599X
+    affiliation:
+      - University of the Philippines Diliman
+  
+---
+
+# Introduction
+
+In cognitive psychology, **conflict detection** refers to the cognitive processes involved in identifying inconsistencies between one's beliefs, attitudes, and the information presented by external stimuli or contradictory viewpoints. This phenomenon is crucial for reinforcing critical thinking and self-reflection. For instance, @Mellers2014Psychological highlight the impact of psychological interventions on improving forecasting accuracy in political contexts, indicating the significance of recognizing conflicts between existing beliefs and new information. Moreover, the study by @Dolbier2025Open emphasizes the role of open-mindedness in navigating conflicts of thought and belief, asserting that the disposition to remain receptive to alternative perspectives can enhance reasoning abilities and conflict resolution skills.
+
+Conversely, **open-mindedness** within cognitive psychology is characterized by an individual's readiness to consider and engage with diverse, often opposing viewpoints. It is linked to various epistemic virtues such as critical thinking and the ability to process information without bias [@Alsharif2020Open; @Riggs2010Open]. According to Kwong, open-mindedness is fundamental in facilitating cognitive engagement with disparate ideas, enabling individuals to explore the validity of different perspectives while acknowledging their potential fallibility [@Kwong2015Open; @Kwong2016Open]. @Kaeslin2023Virtue posits that open-mindedness can be applied in contexts devoid of direct conflict, encouraging cognitive flexibility and broader understanding. This cognitive flexibility is essential for emotional intelligence and interpersonal relationships, as highlighted by @Beitel2005Psychological, who note that psychological mindedness enhances awareness of both personal and others' cognitive and affective states.
+
+Moreover, educational studies suggest that cultivating open-mindedness can play a significant part in conflict resolution and peace-building, particularly in regions affected by long-standing disputes. @BarTal2020Between discuss the challenges of fostering open-mindedness in conflict-ridden societies, where nationalistic educational approaches often undermine critical thinking and perspective-taking. This aligns with findings by @Skład2020Radicalization, who emphasize the positive influence of educational curricula designed to promote open-mindedness, which subsequently enhances students' conflict resolution abilities and civic competences.
